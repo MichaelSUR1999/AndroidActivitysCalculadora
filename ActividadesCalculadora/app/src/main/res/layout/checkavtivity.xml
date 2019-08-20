@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".CheckMain">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="DIGITE EL 1 VALOR" />
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:digits="0123456789"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:text="DIGITE EL 2 VALOR" />
+
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:digits="0123456789"
+        android:inputType="numberDecimal" />
+
+    <CheckBox
+        android:id="@+id/ch1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="SUMAR" />
+
+    <CheckBox
+        android:id="@+id/ch2"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:text="RESTAR" />
+
+    <CheckBox
+        android:id="@+id/ch3"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="MULTIPLICAR" />
+
+    <CheckBox
+        android:id="@+id/ch4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="DIVIDIR" />
+
+    <Button
+        android:id="@+id/bt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="operar"
+        android:text="OPERAR"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:text="RESULTADO" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="Volver"
+        android:text="Volver" />
+
+</LinearLayout>

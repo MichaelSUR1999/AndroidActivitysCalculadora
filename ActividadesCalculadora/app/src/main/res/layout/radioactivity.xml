@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    android:orientation="vertical">
+    tools:context=".Radiomain">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:text="                                      DIGITE EL 1 VALOR"
+        android:textColor="@android:color/background_light"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:digits="0123456789"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="                                     DIGITE EL 2 VALOR"
+        android:textColor="@android:color/background_light"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:digits="0123456789"
+        android:inputType="numberDecimal"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="271dp">
+
+        <RadioButton
+            android:id="@+id/r1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SUMAR" />
+
+        <RadioButton
+            android:id="@+id/r2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="RESTAR" />
+
+        <RadioButton
+            android:id="@+id/r3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="MULTIPLICAR" />
+
+        <RadioButton
+            android:id="@+id/r4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="DIVIDIR" />
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="operar"
+            android:text="OPERAR" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:text="                             RESULTADO"
+        android:textColor="@android:color/background_light"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="Volver"
+        android:text="VOLVER" />
+
+
+</LinearLayout>

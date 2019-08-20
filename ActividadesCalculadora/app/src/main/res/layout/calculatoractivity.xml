@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    android:orientation="vertical"
+    tools:context=".ButtonMain">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:text="INGRESE EL 1 VALOR"
+        android:textColor="@android:color/background_light"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:digits="0123456789"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="INGRESE EL 2 VALOR"
+        android:textColor="@android:color/background_light"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:digits="0123456789"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/bt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:onClick="sumar"
+        android:text="+"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/bt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_dark"
+        android:onClick="restar"
+        android:text="-"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/bt3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_light"
+        android:onClick="multiplicar"
+        android:text="*"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/bt4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_bright"
+        android:onClick="dividir"
+        android:text="/"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RESULTADO"
+        android:textColor="@android:color/background_light"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+    <Button
+        android:id="@+id/bt6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="Volver"
+        android:text="VOLVER" />
+
+</LinearLayout>
